@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 2</title>
     <style>
-        .box1 {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            position: relative;
-        }
-        .box2 {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-        }
-.box3 {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            position: relative;
-        }
+    .wrapper {
+        position: relative;
+    }
+    .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        z-index: 1;
+        position: absolute;
+    }
+    .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        z-index: 2;
+        position: absolute;
+    }
+    .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        z-index: 3;
+        position: absolute;
+    }   
     </style>
 </head>
 <body>
