@@ -11,7 +11,66 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <style>
-      /* Add your CSS here. */
+      body {
+        background-color: grey;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #site-header {
+        width: 1440px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      #site-header .row,
+      footer .row {
+        background-color: beige;
+      }
+
+      #content {
+        width: 1440px;
+        margin: 5px auto;
+        background-color: beige;
+        border: 1px solid brown;
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+      }
+
+      .col-a,
+      .col-b,
+      .col-50,
+      .col-33,
+      .col-100 {
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+
+      #content .col-a {
+        flex: 1;
+        color: black;
+      }
+
+      #content .col-b {
+        width: 200px;
+      }
+
+      .col-50 {
+        width: 50%;
+      }
+
+      .col-33 {
+        width: 33.333%;
+      }
+
+      .col-100 {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
