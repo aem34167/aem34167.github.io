@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+        margin: 1em auto;
+        max-width: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: minmax(150px, auto);
+      margin: 1px auto;
+    }
+
+    .grid > div {
+      background: #76877D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      flex: 0 0 100px;
+      padding: 10px;
+    }
+    body {
+        background-color: #76877D;
+    }
+    h1 {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    h2 {
+        text-align: left;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    h3 {
+        text-align: left;
+        font-family: 'Arial', sans-serif;
+        font-weight: normal;
+    }
+    footer {
+        background-color: #5B3000;
+        padding: 1em 0;
+        text-align: center;
+        font-family: Times, serif;
+        color: white;
+        text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    #primary-nav a { 
+  background-color: #5B3000;
+  display: block; 
+  padding: 1em;
+} 
+        #primary-nav li { 
+  list-style: none; 
+  display: inline-block;
+        }
+@media (max-width: 767px) { 
+  #primary-nav li { 
+  display:block; 
+  .inner {overflow: hidden;}
+    #toggle-nav-btn {
+        display: block;
+    }
+    body.nav-open #primary-nav {
+      grid-template-rows: 1fr;
+    }
+    .inner {
+      overflow: hidden;
+    }
+    #toggle-nav-btn {
+      display: block;
+    }
+}
+}
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+
+    </style>
+</head>
+<body>
+    <nav id="primary-nav">
+    <div class="inner">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Mailing List</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <h1>Top Picks:</h1>
+    <h1>Other Picks:</h1>
+    <main>
+        <div class="grid">
+            <div>
+                <h2>Hershey Park</h2> 
+                <h3>Hershey, PA</h3>
+            </div>
+            <div>
+                <h2>Railroad Museum of Pennsylvania</h2>
+                <h3>Strasburg, PA</h3>
+            </div>
+            <div>
+                <h2>Raystown Lake</h2>
+                <h3>Huntingdon County, PA</h3>
+            </div>
+            <div>
+                <h2>Lancaster Central Market</h2>
+                <h3>Lancaster, PA</h3>
+            </div>
+            <div>
+                <h2>Pennsylvania State Capitol</h2>
+                <h3>Harrisburg, PA</h3>
+            </div>
+            <div>
+                <h2>Pine Grove Furnace State Park</h2>
+                <h3>Gardeners, PA</h3>
+            </div>
+            <div>
+                <h2>Lewisburg</h2>
+                <h3>Lewisburg, PA</h3>
+            </div>
+            <div>
+                <h2>Worlds End State Park</h2>
+                <h3>Forksville, PA</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-100">
+                <p>Central PA Tourism</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
