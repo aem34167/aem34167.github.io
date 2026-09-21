@@ -9,21 +9,26 @@
         margin: 1em auto;
         max-width: auto;
     }
-
+    #section2 {
+        margin: 1em auto;
+        max-width: auto;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: minmax(150px, auto);
       margin: 1px auto;
+      flex-wrap: wrap;
     }
 
     .grid > div {
       background: #76877D;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      flex-direction: column;
       justify-content: center;
-      height: 200px;
-      flex: 0 0 100px;
+      height: auto;
+      flex: 0 0 calc(50% - 20px);
       padding: 10px;
     }
     body {
@@ -81,7 +86,7 @@
 }
 #toggle-nav-btn {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
   }
@@ -92,51 +97,79 @@
     <nav id="primary-nav">
     <div class="inner">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Mailing List</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="404.html">Explore</a></li>
+        <li><a href="404.html">About</a></li>
+        <li><a href="404.html">Mailing List</a></li>
       </ul>
     </div>
   </nav>
-  <section>
     <h1>Top Picks:</h1>
-    <h1>Other Picks:</h1>
-    <main>
-        <div class="grid">
+     <section id="section1">
+        <h1>Other Picks:</h1>
+     <div class="grid">
+            <div>
+                <h2>Gettysburg National Military Park</h2> 
+                <h3>Gettysburg, PA</h3>
+                <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits</p>
+                <a href="https://www.nps.gov/gett/index.htm" target="_blank">Explore</a>
+            </div>
+            <div>
+                <h2>The Pennsylvania Grand Canyon</h2>
+                <h3>Wellsboro, PA</h3>
+                <p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
+                <a href="https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colton-point-state-park" target="_blank">Explore</a>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <h1>Other Picks:</h1>
+     <div class="grid">
             <div>
                 <h2>Hershey Park</h2> 
                 <h3>Hershey, PA</h3>
+                <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
             </div>
             <div>
                 <h2>Railroad Museum of Pennsylvania</h2>
                 <h3>Strasburg, PA</h3>
+                <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
             </div>
             <div>
                 <h2>Raystown Lake</h2>
                 <h3>Huntingdon County, PA</h3>
+                <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
             </div>
             <div>
                 <h2>Lancaster Central Market</h2>
                 <h3>Lancaster, PA</h3>
+                <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
             </div>
             <div>
                 <h2>Pennsylvania State Capitol</h2>
                 <h3>Harrisburg, PA</h3>
+                <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
             </div>
             <div>
                 <h2>Pine Grove Furnace State Park</h2>
                 <h3>Gardeners, PA</h3>
+                <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
             </div>
             <div>
                 <h2>Lewisburg</h2>
                 <h3>Lewisburg, PA</h3>
+                <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
             </div>
             <div>
                 <h2>Worlds End State Park</h2>
                 <h3>Forksville, PA</h3>
+                <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
             </div>
         </div>
+    </section>
+    <main> 
+    </main>
+    
     </main>
     <footer>
         <div class="row">
