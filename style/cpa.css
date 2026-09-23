@@ -139,6 +139,7 @@ main {
       .social-icon {
       box-shadow: none;
       gap: 0.5rem;
+      size: 40px
       }
 
       #primary-nav {
