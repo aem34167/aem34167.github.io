@@ -80,15 +80,76 @@
       img{
         box-shadow: -5px 6px 6px rgba(0, 0, 0, 0.4);
       }
+      #hero {
+        position: relative;
+        height: 400px;
+        background-image: url("/images/hero.webp");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.75;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .hero-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 420px;
+        background: #5b3000;
+        padding: 1.5rem 1.75rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        }   
+
+      .hero-box h1 {
+        margin: 0 0 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        place-items: center;
+      }
+
       footer {
         background-color: #5b3000;
-        text-align: center;
+        text-align: left;
         font-family: Times, serif;
         color: white;
         text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
       }
+      .footer-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          padding: 1rem 2rem;
+        }
+
+        .footer-left,
+        .footer-right {
+          flex: 1;
+        }
+
+      .footer-right {
+        text-align: center;
+      }
+      .footer-socials {
+        text-align: right;
+        padding: 0.75rem 0 1rem;
+      }
+      .footer-socials a {
+        color: white;
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
       #primary-nav {
         background-color: #5b3000;
+        list-style: none;
       }
       .inner {
         max-width: 1200px;
@@ -101,16 +162,15 @@
         padding: 0;
       }
       #primary-nav ul li:nth-child(3) {
-        background-color: rgb(149, 123, 123);
-        margin-left: 100px;
+        margin-left: 825px;
       }
       #primary-nav a {
         display: block;
         padding: 1em;
       }
       #primary-nav li {
-        list-style: none;
         display: inline-block;
+        justify-content: space-between;
       }
 
       #top-picks {
@@ -121,6 +181,15 @@
         margin: 0px;
         font-size: 12.75px;
       }
+      .nav-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-weight: bold;
+        
+      }
+
       
 
       @media (max-width: 767px) {
@@ -154,6 +223,7 @@
   <body>
     <nav id="primary-nav">
       <div class="inner">
+        <div class="nav-title">Central PA</div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Explore</a></li>
@@ -173,7 +243,14 @@
         background-size: cover;
         background-position: center;
       "
-    ></div>
+      class="inner hero"
+      id="hero"
+>
+  <div class="hero-box">
+    <h1>Plan an Adventure!</h1>
+  </div>
+</div>
+    </div>
 
     <section id="top-picks">
       <div class="inner">
@@ -355,101 +432,27 @@ Creek Gorge.
         </div>
       </div>
     </section>
+
     <footer>
-      <div class="inner">
-        <p>Central PA Tourism</p>
-        <p>Contact Us: 1-800-123-4567</p>
-      </div>
-      <div class="location flex">
-        </a>
-      </div>
-    </footer>
+  <div class="inner footer-inner">
+    <div class="footer-left">
+      <strong>Contact Us:</strong>
+      <p>Email: info@centralpatourism.com</p>
+      <p>Phone: (555) 123-4567</p>
+    </div>
 
+    <div class="footer-right">
+      &copy; Central PA Tourism - 2026<br />
+      All rights reserved
+    </div>
+    <div class="footer-socials">
+    <a href="#">Facebook</a> |
+    <a href="#">Twitter</a> |
+    <a href="#">Instagram</a>
+  </div>
+  </div>
 
-
-
-
-
-
-
-
-
-    <!--
-     <section id="section1">
-        <h1>Other Picks:</h1>
-     <div class="grid">
-            <div>
-                <h2>Gettysburg National Military Park</h2> 
-                <h3>Gettysburg, PA</h3>
-                <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits</p>
-                <a href="https://www.nps.gov/gett/index.htm" target="_blank">Explore</a>
-                <img src="https://placehold.co/325x150" alt="Gettysburg National Military Park" />
-            </div>
-            <div>
-                <h2>The Pennsylvania Grand Canyon</h2>
-                <h3>Wellsboro, PA</h3>
-                <p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
-                <a href="https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colton-point-state-park" target="_blank">Explore</a>
-                <img src="#" alt="The Pennsylvania Grand Canyon" />
-            </div>
-        </div>
-    </section>
-    <section id="section2">
-        <h1>Other Picks:</h1>
-     <div class="grid">
-            <div>
-                <h2>Hershey Park</h2> 
-                <h3>Hershey, PA</h3>
-                <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
-            </div>
-            <div>
-                <h2>Railroad Museum of Pennsylvania</h2>
-                <h3>Strasburg, PA</h3>
-                <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
-            </div>
-            <div>
-                <h2>Raystown Lake</h2>
-                <h3>Huntingdon County, PA</h3>
-                <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
-            </div>
-            <div>
-                <h2>Lancaster Central Market</h2>
-                <h3>Lancaster, PA</h3>
-                <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
-            </div>
-            <div>
-                <h2>Pennsylvania State Capitol</h2>
-                <h3>Harrisburg, PA</h3>
-                <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
-            </div>
-            <div>
-                <h2>Pine Grove Furnace State Park</h2>
-                <h3>Gardeners, PA</h3>
-                <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
-            </div>
-            <div>
-                <h2>Lewisburg</h2>
-                <h3>Lewisburg, PA</h3>
-                <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
-            </div>
-            <div>
-                <h2>Worlds End State Park</h2>
-                <h3>Forksville, PA</h3>
-                <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
-            </div>
-        </div>
-    </section>
-    <main> 
-    </main>
-    
-    </main>
-    <footer>
-        <div class="row">
-            <div class="col-100">
-                <p>Central PA Tourism</p>
-            </div>
-        </div>
-    </footer>
--->
+  
+</footer>
   </body>
 </html>
