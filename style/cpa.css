@@ -139,7 +139,7 @@ main {
       .social-icon {
       box-shadow: none;
       gap: 0.5rem;
-      size: 40px
+
       }
 
       #primary-nav {
@@ -227,4 +227,12 @@ main {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
