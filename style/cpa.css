@@ -54,11 +54,13 @@ main {
       }
       img{
         box-shadow: -5px 6px 6px rgba(0, 0, 0, 0.4);
+        background-color: rgb(189, 189, 189);
+        margin: .2em 0;
       }
       #hero {
         position: relative;
         height: 400px;
-        background-image: url("/images/hero.webp");
+        background-image: url("/projects/project-1/project-1-images/hero.webp");
         background-size: cover;
         background-position: center;
         opacity: 0.75;
@@ -72,13 +74,12 @@ main {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 420px;
+        max-width: auto;
         background: #321b00;
         padding: 1.5rem 1.75rem;
         border-radius: 12px;
         box-shadow: 20 10px 20px rgba(0, 0, 0, 0.40);
         text-align: center;
-        border-radius: 50px;
         
         }   
 
@@ -235,4 +236,8 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
+
+
