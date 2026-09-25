@@ -144,9 +144,10 @@ main {
       .social-icon {
       box-shadow: none;
       gap: 0.5rem;
-
       }
-
+      .social-icon a:hover {
+        text-decoration: underline;
+      }
       #primary-nav {
         background-color: #5b3000;
         list-style: none;
