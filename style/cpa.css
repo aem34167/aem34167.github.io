@@ -75,25 +75,29 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: auto;
-        background: #321b00;
+        background: #76877d;
         padding: 1.5rem 1.75rem;
-        border-radius: 12px;
-        box-shadow: 20 10px 20px rgba(0, 0, 0, 0.40);
+        opacity: 1;
+        border-radius: 10px;
+        box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.40);
         text-align: center;
-        
-        }   
+        border-color: #5b3000;
+        border-style: solid;
+        border-width: 2px;
+      }   
 
       .hero-box h1 {
         margin: 0 0 0.5rem;
         font-size: 2rem;
         text-align: center;
-        color: white;
+        color: black;
         place-items: center;
+        opacity: 1;
       }
       .hero-place {
       position: absolute;
-      left: -350px;
-      bottom: -150px;
+      left: -315px;
+      bottom: -155px;
       transform: translateX(-50%);
       background: rgba(91, 48, 0, 1);
       color: white;
