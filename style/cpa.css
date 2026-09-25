@@ -188,7 +188,7 @@ main {
         color: white;
         font-weight: normal;
         font-size: 40px;
-        background: #76877d; border-radius: 50px;
+        background: #76877d; border-radius: 12px;
         padding: 0.40rem .5rem;
         white-space: nowrap;
       }
