@@ -1,0 +1,43 @@
+#primary-nav ul {
+ padding-left: 0;
+ }
+#primary-nav a { 
+  background-color: rgb(96, 98, 101);
+  display: block; 
+  padding: 1em;
+} 
+
+#primary-nav li { 
+  list-style: none; 
+}
+
+@media (max-width: 767px) { 
+  #primary-nav li { 
+  display:block; 
+  .inner {overflow: hidden;}
+    #toggle-nav-btn {
+        display: block;
+    }
+    body.nav-open #primary-nav {
+      grid-template-rows: 1fr;
+    }
+    .inner {
+      overflow: hidden;
+    }
+    #toggle-nav-btn {
+      display: block; 
+    }
+}
+}
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+  a:hover {
+    color: rgb(212, 213, 214);
+  }
+  a:active {
+    color: rgb(219, 237, 255);
+  }
