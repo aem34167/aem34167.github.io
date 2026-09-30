@@ -3,7 +3,11 @@ body {
     flex-direction: column;
     width: auto;
     margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(247, 231, 255);
   }
+ 
+
 h1 {
     text-align: center;
 }
@@ -20,9 +24,10 @@ h2 {
  }
 
 #primary-nav a { 
-  background-color: rgb(107, 141, 191);
+  background-color: rgb(255, 221, 69);
   display: block; 
   padding: 1em;
+  text-decoration: none;
 } 
 
 #primary-nav li { 
@@ -36,6 +41,7 @@ h2 {
     right: 1em;
     top: 1em;
   }
+
 
 @media (max-width: 767px) { 
   #primary-nav li { 
