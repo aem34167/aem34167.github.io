@@ -10,12 +10,14 @@ body {
 
 h1 {
     text-align: center;
+    font-family: verdana, sans-serif;
 }
 
 h2 {
     text-align: center;
     font-style: italic;
-    color: rgb(131, 13, 0);
+    color: rgb(127, 0, 131);
+    font-size: 28px;
 }
 
 #primary-nav ul {
