@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+    .box {
+        position: relative;
+        z-index: 0;
+        padding: 10px;
+        border: 10px solid rgb(117, 117, 117);
+        width: 800px;
+        height: 800px;
+    }
+    .box1 {
+        width: 400px;
+        height: 400px;
+        top: 100px;
+        left: 100px;
+        background-color: rgb(85, 204, 255);
+        position: absolute;
+        z-index: 1;
+    
+    }
+    .box2 {
+        width: 400px;
+        height: 400px;
+        top: 215px;
+        left: 215px;
+        background-color: rgb(247, 67, 67);
+        z-index: 2;
+        position: absolute;
+    }
+    .box3 {
+        width: 400px;
+        height: 400px;
+        top: 330px;
+        left: 330px;
+        background-color: rgb(153, 255, 153);
+        z-index: 3;
+        position: absolute;
+    }   
+    </style>
+</head>
+<body>
+    <h1>Exercise 2</h1>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
