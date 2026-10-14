@@ -1,3 +1,8 @@
+.slackey-regular {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 #primary-nav ul { 
     padding: 0; 
     text-align: right;
@@ -18,7 +23,7 @@
     top: 1em;
   }
   .grid {
-    padding: 1rem;
+   padding: 1rem;
     box-sizing: border-box;
     margin: 0;
     background-color: #902923;
@@ -27,6 +32,25 @@
     gap: 2rem;
     align-items: start;
   }
+  .grid > div:nth-child(2) {
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+}
+
+.grid > div:nth-child(2) h4 {
+  padding: 0;
+}
+
+.goto-button{
+  background-color: #D6D5C9; 
+  color: #0A100D; border: none; 
+  padding: 10px 20px; 
+  border-radius: 100px; 
+  cursor: pointer; 
+  text-align: center;
+  font-family: 'Slackey', sans-serif;
+}
 
   @media (max-width: 767px) {
     #primary-nav {
@@ -52,7 +76,7 @@
 }
 .grid img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 1em 0;
   border-radius: 100px;
@@ -89,6 +113,14 @@
     padding: 0.5em 1em;
     cursor: pointer;
   }
+  h1{
+        font-family: 'Slackey', sans-serif;
+        font-weight: 400;
+        color: #0A100D;
+        text-align: center;
+        padding: 1em 0;
+        margin: 0;
+    }
   h2{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
@@ -106,6 +138,15 @@
         padding: 1em 0;
         margin: 0;
     }
+  h4{
+        font-family: 'Slackey', sans-serif;
+        font-weight: 700;
+        color: #0A100D;
+        text-align: center;
+        padding: 1em 0;
+        margin: 0;
+        Font-size: 1.5rem;
+    }
 
 img {
     max-width: 100%;
@@ -113,12 +154,11 @@ img {
     padding: 1em 0;
     margin-left: auto;
     margin-right: auto;
-  
   }
   p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #0A100D;
+    color: #D6D5C9;
     text-align: center;
     padding: 1em 0;
     margin: 0;
