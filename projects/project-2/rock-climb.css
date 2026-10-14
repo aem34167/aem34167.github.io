@@ -18,7 +18,8 @@
     top: 1em;
   }
   .grid {
-    padding: 0;
+    padding: 1rem;
+    box-sizing: border-box;
     margin: 0;
     background-color: #902923;
     display: grid;
