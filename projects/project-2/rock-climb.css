@@ -1,0 +1,35 @@
+#primary-nav ul { padding-left: 0; }
+#primary-nav li { 
+  list-style: none; 
+  display: inline-block;
+}
+#primary-nav a { 
+  background-color: cornflowerblue;
+  display: block; 
+  padding: 1em;
+}
+@media (max-width: 767px) {
+    #primary-nav {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s ease-out;
+    }
+    #primary-nav li {
+      display: block;
+    }
+    body.nav-open #primary-nav {
+      grid-template-rows: 1fr;
+    }
+    .inner {
+      overflow: hidden;
+    }
+    #toggle-nav-btn {
+      display: block; /* display button beneath breakpoint */
+    }
+  }
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
