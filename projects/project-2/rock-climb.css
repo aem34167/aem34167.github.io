@@ -84,7 +84,18 @@
   text-align: center;
   font-family: 'Slackey', sans-serif;
 }
+@media (min-width: 768px) {
+  #primary-nav .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  #primary-nav ul {
+    display: flex;
+    align-items: center;
+  }
+}
 
   @media (max-width: 767px) {
     #primary-nav {
@@ -108,6 +119,7 @@
       .grid {
     grid-template-columns: 1fr;
   }
+  
 }
 .grid img {
   display: block;
