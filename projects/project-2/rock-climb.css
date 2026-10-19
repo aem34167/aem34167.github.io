@@ -3,6 +3,22 @@
   font-weight: 400;
   font-style: normal;
 }
+a {
+    color: #D6D5C9;
+    text-decoration: none;
+    font-family: 'Slackey', sans-serif;
+}
+.previous,
+.next {
+  color: #0A100D;
+  background-color: #D6D5C9;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+}
+.next {
+  float: right;
+  margin-right: 1em;
+}
 #primary-nav ul { 
     padding: 0; 
     text-align: right;
@@ -37,23 +53,14 @@
     margin: 0;
     background-color: #902923;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     align-items: start;
   }
-  .grid > div:nth-child(2) {
-  display: grid;
-  place-items: center;
-  align-self: stretch;
-
-}
-.grid > div:not(:nth-child(2)) {
+.grid > div {
   width: 100%;
   max-width: 560px;
   justify-self: center;
-}
-.grid > div:nth-child(2) h4 {
-  padding: 0; 
 }
 
 .goto-button{
@@ -114,12 +121,20 @@
       overflow: hidden;
     }
     #toggle-nav-btn {
-      display: block; /* display button beneath breakpoint */
+      display: block;
+    }
+    footer #toggle-nav-btn {
+      position: static;
+      margin: 0 1em 0 auto;
     }
       .grid {
     grid-template-columns: 1fr;
   }
-  
+}
+@media (min-width: 768px) {
+  .bouldering-step3 .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 .grid img {
   display: block;
@@ -132,6 +147,9 @@
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+}
+.bouldering-step3 .grid img {
+  width: auto;
 }
   .hero {
     background-color: #D6D5C9;
@@ -208,6 +226,9 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .bouldering-step4 main img {
+    display: block;
+  }
   p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -215,4 +236,7 @@ img {
     text-align: center;
     padding: 1em 0;
     margin: 0;
+  }
+  body {
+    background-color: #902923;
   }
