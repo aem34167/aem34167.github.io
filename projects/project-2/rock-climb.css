@@ -12,6 +12,11 @@ a {
     text-decoration: none;
     font-family: 'Slackey', sans-serif;
 }
+a:hover {
+    color: #0A100D;
+    text-decoration: underline;
+    text-decoration-color:#0A100D;
+}
 
 .previous,
 .next {
@@ -78,6 +83,14 @@ h2 {
 }
 .home-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+.home-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+.home-grid .goto-button {
+  margin-top: auto;
 }
 
 .goto-button{
