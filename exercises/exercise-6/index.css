@@ -34,3 +34,20 @@
   margin-inline: auto;
   object-fit: contain;
 }
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+.grid {
+  padding: 1em;
+}
