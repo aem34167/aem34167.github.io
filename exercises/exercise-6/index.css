@@ -64,8 +64,8 @@ color: rgb(220, 174, 159)
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 1px;
-  border: 1px solid #0080ff;
-  background-color: #0080ff;
+  border: 1px solid #CE8964;
+  background-color: #CE8964;
 }
 
 .grid > * {
