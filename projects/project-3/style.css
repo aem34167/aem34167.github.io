@@ -1,0 +1,101 @@
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        padding: 1em;
+      }
+      #logo {
+        display: block;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+      }
+      header {
+        background-color: lightgreen;
+      }
+      #toggle-nav-btn {
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+      }
+      #primary-nav {
+        background-color: lightblue;
+      }
+      #primary-nav ul {
+        padding-left: 0;
+      }
+      #primary-nav li {
+        list-style: none;
+        display: inline-block;
+      }
+      #primary-nav a {
+        background-color: cornflowerblue;
+        display: block;
+        padding: 1em;
+      }
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+      }
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+      }
+      @media (max-width: 767px) {
+        header .container {
+          flex-direction: column;
+        }
+        #primary-nav {
+          width: 100%;
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav-btn {
+          display: block; /* display button beneath breakpoint */
+        }
+      }
+       img {
+        width: 100%;
+        height: auto;
+      }
+
+      #hero {
+        height: 600px;
+        background-image: url("https://picsum.photos/2000/400");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      #hero-content {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        width: 50%;
+        min-width: 400px;
+        padding: 20px;
+        margin: 0 auto;
+      }
