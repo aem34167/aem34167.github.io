@@ -18,7 +18,7 @@
         color: white;
       }
       header {
-        background-color: lightgreen;
+        background-color: #D77A61;
       }
       #toggle-nav-btn {
         display: none;
@@ -27,7 +27,7 @@
         top: 1em;
       }
       #primary-nav {
-        background-color: lightblue;
+        background-color: #D77A61;
       }
       #primary-nav ul {
         padding-left: 0;
@@ -37,14 +37,14 @@
         display: inline-block;
       }
       #primary-nav a {
-        background-color: cornflowerblue;
+        background-color: #D77A61;
         display: block;
         padding: 1em;
       }
       .container {
         max-width: 1440px;
         margin: 0 auto;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #D77A61;
         height: 100%;
       }
       header .container {
@@ -75,15 +75,16 @@
         #toggle-nav-btn {
           display: block; /* display button beneath breakpoint */
         }
-      }
+     
+    }
        img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
       }
 
       #hero {
         height: 600px;
-        background-image: url("https://picsum.photos/2000/400");
+        background-image: url("/projects/project-3/images/hero.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
