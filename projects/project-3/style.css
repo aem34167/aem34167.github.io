@@ -126,3 +126,58 @@
       .feature-description {
         flex-grow: 1;
       }
+       .restaurant-menu {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Georgia, serif;
+      }
+
+      .menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 1.5rem;
+      }
+
+      .dish-name {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin: 0;
+        padding-right: 0.5rem;
+        background: #fff;
+        z-index: 1;
+      }
+
+      .dish-price {
+        font-weight: 700;
+        margin: 0;
+        margin-left: auto;
+        padding-left: 0.5rem;
+        background: #fff;
+        z-index: 1;
+      }
+
+      /* Creates the classic dotted line between name and price */
+      .menu-item::after {
+        content: "";
+        flex-grow: 1;
+        border-bottom: 2px dotted #ccc;
+        order: 2;
+        margin: 0 0.5rem;
+      }
+
+      .dish-name {
+        order: 1;
+      }
+
+      .dish-price {
+        order: 3;
+      }
+
+      .dish-desc {
+        width: 100%;
+        margin: 0.25rem 0 0 0;
+        font-size: 0.95rem;
+        color: #555;
+        order: 4;
+      }
