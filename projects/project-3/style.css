@@ -5,12 +5,20 @@
   font-weight: weight;
   font-style: normal;
 }
+
+.josefin-slab{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
       body {
         margin: 0;
         padding: 0;
       }
       main {
         padding: 0;
+        background-color: #223843;
       }
       #logo {
         display: flex;
@@ -47,6 +55,7 @@
         background-color: #D77A61;
         grid-column: 2;
         justify-self: center;
+        font-size: 17px;
       }
       #primary-nav ul {
         padding-left: 0;
@@ -82,8 +91,20 @@
       h2{
         color: #223843;
         font-family: "Josefin Sans", sans-serif;
-    
-      }
+        font-size: 36px;
+        }
+    p{
+        font-family: "Josefin Slab", serif;
+        max-width: 750px ;
+        line-height: 1.4;
+    }
+    .story{
+        background-color: #D77A61;
+        color:#EFF1F3;
+        padding: 15px 20px;
+        font-family: "Josefin Sans", sans-serif;
+        border-radius: 50px;
+    }
 .rounded-underline {
   position: relative;
   text-decoration: none; /* Turn off the default underline */
@@ -137,7 +158,7 @@
      
     }
        img {
-        max-width:max-content;
+        max-width: 100%;
         height: auto;
       }
 
@@ -166,6 +187,10 @@
         text-align: center;
         background-color: #D8B4A0;
       }
+      .intro p {
+        margin-inline: auto;
+        font-size: 32px;
+      }
       .feature {
         display: flex;
         gap: 20px;
@@ -173,18 +198,38 @@
         margin: 0 auto;
         background-color: #223843;
       }
+      
       .feature.reverse {
         flex-direction: row-reverse;
         text-align: right;
         background-color: #223843;
       }
       .feature-image {
-        flex-basis: 300px;
-        width: 707px;
+        flex: 1.2 1 0;
+        max-width: 707px;
         height: 465px;
       }
+      .feature-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
       .feature-description {
-        flex-grow: 1;
+        flex: 1 1 0;
+        min-width: 0;
+      }
+      @media (max-width: 767px) {
+        .feature,
+        .feature.reverse {
+          flex-direction: column;
+        }
+        .feature-image {
+          flex: none;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 4 / 3;
+        }
       }
        .restaurant-menu {
         max-width: 600px;
