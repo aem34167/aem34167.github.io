@@ -71,6 +71,16 @@
         align-items: center;
         font-family: "Josefin Sans", sans-serif;
       }
+      #nav-cta {
+      grid-column: 3;
+      justify-self: end;
+      margin-right: 1rem;
+      padding: 1em;
+      border-radius: 50px;
+      background-color: #223843;
+      color: #EFF1F3;
+     font-family: "Josefin Sans", sans-serif;
+      }
       #primary-nav a {
         background-color: #D77A61;
         display: block;
@@ -147,6 +157,11 @@
           grid-template-rows: 0fr;
           transition: grid-template-rows 0.5s ease-out;
         }
+          #nav-cta {
+        align-self: center;
+        margin: 0 1rem 1rem;
+        padding: .75rem 7rem;
+        }
 
         #primary-nav li {
           display: block;
@@ -176,7 +191,14 @@
         max-width: 100%;
         height: auto;
       }
-
+      .hero-line-one{
+        display: block;
+        font-weight: 300; /* light */
+      }
+      .hero-line-two{
+        display: block; 
+        font-weight: 700; /* bold */
+      }
       #hero {
         height: 600px;
         background-image: url("/projects/project-3/images/hero.png");
@@ -184,9 +206,11 @@
         background-position: center;
         background-size: cover;
         justify-content: center;
-        align-items: center;
+        align-items: left;
         display: flex;
       }
+     
+
       #hero-content {
         background-color: rgba(34, 56, 67, 0.8);
         text-align: left;
@@ -196,7 +220,13 @@
         margin: 0 auto;
         color: white;
         font-family: "Josefin Sans", sans-serif;
-      }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* text to bottom */
+        align-items: flex-start;   /* text to left */
+        text-align: left;
+        min-height: 250px; 
+        }
       .intro {
         padding: 40px;
         text-align: center;
