@@ -318,6 +318,14 @@
   font-family: sans-serif;
 }
 
+.footer-col h3 {
+  color: #D8B4A0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+}
+
 .footer-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -337,12 +345,6 @@
   color: #ffffff;
   margin-bottom: 15px;
   font-size: 18px;
-}
-
-.footer-col p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #a0a0a0;
 }
 
 .footer-col ul {
