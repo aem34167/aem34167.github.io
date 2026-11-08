@@ -341,15 +341,10 @@
   margin-bottom: 20px;
 }
 
-.footer-col h3 {
-  color: #ffffff;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
 .footer-col ul {
   list-style: none;
   padding: 0;
+  font-family: 'Josefin Slab', serif;
 }
 
 .footer-col ul li {
