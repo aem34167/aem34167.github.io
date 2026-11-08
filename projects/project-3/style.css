@@ -92,12 +92,27 @@
         color: #223843;
         font-family: "Josefin Sans", sans-serif;
         font-size: 36px;
+        padding: 15px;
         }
     p{
         font-family: "Josefin Slab", serif;
         max-width: 750px ;
         line-height: 1.4;
+        padding: 15px;
     }
+    .feature-description h2{
+        color: #EFF1F3;
+        font-size: 48px;
+    }
+    .feature-description p{
+        color: #EFF1F3;
+        font-size: 32px;
+    }
+    
+    .feature-description .story {
+  display: inline-block;
+  margin-top: 1rem;
+}
     .story{
         background-color: #D77A61;
         color:#EFF1F3;
@@ -219,16 +234,22 @@
         flex: 1 1 0;
         min-width: 0;
       }
+      .story {
+     display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
       @media (max-width: 767px) {
         .feature,
         .feature.reverse {
           flex-direction: column;
         }
         .feature-image {
-          flex: none;
-          width: 100%;
-          height: auto;
-          aspect-ratio: 4 / 3;
+    flex: 0 0 40%;
+    height: auto;
+    aspect-ratio: 4 / 3;
         }
       }
        .restaurant-menu {
