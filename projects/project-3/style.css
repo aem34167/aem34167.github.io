@@ -217,7 +217,10 @@
       .feature.reverse {
         flex-direction: row-reverse;
         text-align: right;
-        background-color: #223843;
+        background-color: #D8B4A0;
+      }
+      .feature.reverse p, .feature.reverse h2 {
+        color: #223843;
       }
       .feature-image {
         flex: 1.2 1 0;
