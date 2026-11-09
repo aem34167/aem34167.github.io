@@ -122,7 +122,9 @@
         color: #EFF1F3;
         font-size: 32px;
     }
-    
+    .contact {
+        background-color: #D8B4A0;
+    }
     .feature-description .story {
   display: inline-block;
   margin-top: 1rem;
@@ -134,6 +136,18 @@
 .intro-menu {
   background-color: #223843;
   padding: 1px 0;
+}
+.intro-story {
+  background-color: #223843;
+  padding: 1px 0;
+}
+.intro-story h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: #D8B4A0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .intro-contact h2 {
   margin: 0;
@@ -161,15 +175,24 @@
   background-color: #D8B4A0;
 }
 
+.contact .grid {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
 .grid > div {
   background: #D8B4A0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
   min-width: 0;
   box-sizing: border-box;
   padding: 1rem;
+}
+
+.contact .grid > div {
+  min-height: 500px;
+  text-align: center;
 }
 
 .grid > div h2, .grid > div ul {
@@ -183,9 +206,30 @@
   text-align: left;
   align-self: flex-start;
 }
-.grid > div ul {
-  text-align: left;
-  align-self: flex-start;
+
+.contact .grid > div ul {
+  text-align: center;
+  align-self: center;
+  line-height: 3em;
+  font-size: 32px;
+}
+.contact .grid > .vertical-line {
+  border-left: 2px solid #333; /* Line thickness, style, and color */
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  min-height: 500px;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .vertical-line {
+    display: none;
+  }
 }
 
 .grid ul {
@@ -354,9 +398,24 @@
         margin-top: 0;
         line-height: 1.4;
       }
+      .feature.three {
+        background-color: #D8B4A0;
+        color: #223843;
+      }
+      .feature.three .feature-description{
+        background-color: #D8B4A0;
+        color: #223843;
+      }
+      .feature.three .feature-description p,
+      .feature.three .feature-description h2 {
+        color: #223843;
+        text-align: center;
+      }
       .feature-image {
         flex: 1.2 1 0;
-        height: 465px;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        align-self: flex-start;
         overflow: hidden;
       }
       .feature-image img {
@@ -387,9 +446,10 @@
           flex-direction: column;
         }
         .feature-image {
-    flex: 0 0 40%;
-    height: auto;
-    aspect-ratio: 4 / 3;
+          flex: none;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          height: auto;
         }
       }
        .restaurant-menu {
