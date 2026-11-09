@@ -214,12 +214,13 @@
   font-size: 32px;
 }
 .contact .grid > .vertical-line {
-  border-left: 2px solid #333; /* Line thickness, style, and color */
+  border-left: 4px solid #D77A61; 
   height: 100px;
   justify-self: center;
   align-self: center;
   min-height: 500px;
   padding: 0;
+  border-radius: 100px;
 }
 
 @media (max-width: 767px) {
@@ -345,7 +346,21 @@
         gap: 1rem;
         display: flex;
       }
-     
+     #hero-contact{
+        min-height: clamp(320px, 41.67vw, 600px);
+        height: auto;
+        box-sizing: border-box;
+        padding: 1rem;
+        background-image: url("/projects/project-3/images/hero-contact.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        display: flex;
+      }
 
       #hero-content {
         background-color: rgba(34, 56, 67, 0.8);
