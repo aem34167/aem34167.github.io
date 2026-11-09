@@ -526,6 +526,16 @@
         flex: 1 1 0;
         min-width: 0;
       }
+      .feature.two .feature-description {
+        box-sizing: border-box;
+        padding-inline: clamp(1.5rem, 5vw, 3rem);
+      }
+      .feature.two dl{
+        background-color: #D8B4A0;
+        padding-left: 1em;
+        padding-right: 1em;
+        gap: 5em;
+      }
       .story {
      display: inline-block;
     max-width: 100%;
@@ -555,7 +565,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+       padding: 1em;
       }
 
       .dish-name {
@@ -565,6 +576,7 @@
         padding-right: 0.5rem;
         color: #223843;
         z-index: 1;
+        gap: 1.5rem;
       }
 
       .dish-price {
