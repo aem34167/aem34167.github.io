@@ -7,18 +7,393 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Slackey&display=swap" rel="stylesheet">
-    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Brews & Bonds</title>
 </head>
 <body>
-    <dl class="restaurant-menu">
-      <div class="menu-item">
-        <dt class="dish-name">Salmon Ravioli</dt>
-        <dd class="dish-desc">
-          Handmade pasta filled with ricotta and fresh salmon in a lemon cream
-          sauce.
-        </dd>
-        <dd class="dish-price">$18.50</dd>
+    <button id="toggle-nav-btn"></button>
+    <header>
+      <div class="container">
+        <a href="index.html" id="logo"><img src="/projects/project-3/images/logo.png" alt=""><span>BREWS &amp; BONDS</span></a>
+        <nav id="primary-nav">
+          <div class="inner">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="story.html">Story</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <a href="#" id="nav-cta">Order</a>
       </div>
-    </dl>
+    </header>
+
+    <div id="hero">
+      <div id="hero-content">
+        <h1>
+        <span class="hero-line-one">BREW BOLD,</span>
+        <span class="hero-line-two">DREAM BIGGER</span>
+      </h1>
+      </div>
+      
+    </div>
+    <div class="intro-menu">
+      <h2><span class="rounded-underline">MENU</span></h2>
+    </div>
+
+    <main>
+      <div class="feature two">
+        <div class="feature-image">
+          <img src="https://placehold.co/720" alt="" />
+        </div>
+        <div class="feature-description">
+          <h2>DRINKS</h2>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Espresso</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Americano</dt>
+            <dd class="dish-price">$3.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Latte</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Cappuccino</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Mocha</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Macchiato</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Flat White</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Iced Coffee</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Cold Brew</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Frappuccino</dt>
+            <dd class="dish-price">$5.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Hot Chocolate</dt>
+            <dd class="dish-price">$3.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Chai Tea Latte</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Matcha Latte</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Herbal Tea</dt>
+            <dd class="dish-price">$3.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Iced Tea</dt>
+            <dd class="dish-price">$3.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Smoothie</dt>
+            <dd class="dish-price">$5.00</dd>
+            </div>
+            </dl>
+      </div>
+      </div>
+
+      <div class="feature reverse two">
+        <div class="feature-image">
+          <img src="https://placehold.co/720" alt="Live Music" />
+        </div>
+        <div class="feature-description">
+          <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">ALL HOT TEAS</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+          <ul>
+            <li>Earl Grey Tea</li>
+            <li>English Breakfast Tea</li>
+            <li>Green Tea</li>
+            <li>Jasmine Tea</li>
+            <li>Chamomile Tea</li>
+            <li>Peppermint Tea</li>
+            <li>Rooibos Tea</li>
+            <li>Matcha Tea</li>
+            <li>Oolong Tea</li>
+            <li>White Tea</li>
+            <li>Herbal Blend (hibiscus, ginger, lemongrass)</li>
+            <li>Chai Tea</li>
+            <li>Darjeeling Tea</li>
+            <li>Assam Tea</li>
+            <li>Sencha Tea</li>
+            <li>Genmaicha Tea</li>
+            <li>Pu-erh Tea</li>
+            <li>Lemon Verbena Tea</li>
+            <li>Mint Tea</li>
+            <li>Berry Infusion (raspberry, strawberry)</li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="feature two">
+        <div class="feature-image">
+          <img src="https://placehold.co/720" alt="" />
+        </div>
+
+        <div class="feature-description">
+          <h2>BAKERY</h2>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Croissant</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Bagel</dt>
+            <dd class="dish-price">$3.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Muffin</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Scone</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Sandwich</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Salad</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Quiche</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Soup of the day</dt>
+            <dd class="dish-price">$4.00</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Fruit Parfait</dt>
+            <dd class="dish-price">$4.50</dd>
+            </div>
+            </dl>
+      </div>
+      </div>
+
+      <div class="feature reverse two">
+        <div class="feature-image">
+          <img src="https://placehold.co/720" alt="Live Music" />
+        </div>
+        <div class="feature-description">
+          <h2>SPECIALS</h2>
+          <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Bon Java</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Rocket Mocha</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Fleetwood Macchiato</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Latte Gaga</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Brew-no Mars</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Post Mocha-lone</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">The Rolling Scones</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Nirvanilla Latte</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Beach Boys Brew</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Oasis Oat Latte</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Weezer White Mocha</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Decaf Leppard</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Radiohead Dark Roast</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Green (Tea) Day</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Pearl Jam Pour Over</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+            <dl class="restaurant-menu">
+            <div class="menu-item">
+            <dt class="dish-name">Drinkin Park</dt>
+            <dd class="dish-price">$2.50</dd>
+            </div>
+            </dl>
+
+        </div>
+      </div>
+      
+    </main> 
+
+<footer class="multi-footer">
+  <div class="footer-container">
+    <!-- Column 1: About -->
+    <div class="footer-col">
+      <h3>VISIT US</h3>
+     <ul>
+        <li>123 Place, Harrisburg, PA 17102</li>
+      </ul>
+    </div>
+    
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col">
+      <h3>HOURS</h3>
+      <ul>
+        <li>MON-FRI: 7:30am-10:30pm</li>
+        <li>SAT: 6:30am-10:30pm</li>
+        <li>SUN: 9:30am-5:30pm</li>
+      </ul>
+    </div>
+    
+    <!-- Column 3: Contact Info -->
+    <div class="footer-col">
+      <h3>SAY HI</h3>
+       <ul>
+        <li>contact@brewsandbond.com</li>
+        <li>+1 (717) 867-5309</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 BREWS & BONDS. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
