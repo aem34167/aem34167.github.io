@@ -15,6 +15,7 @@
 #primary-nav a[aria-current="page"] {
   font-weight: 900;
   color: #223843;
+  font-style: italic;
 }
       body {
         margin: 0;
@@ -553,6 +554,11 @@
           width: 100%;
           aspect-ratio: 1 / 1;
           height: auto;
+        }
+        #primary-nav a[aria-current="page"] {
+         font-weight: 900;
+        color: #D8B4A0;
+        font-style: italic;
         }
       }
        .restaurant-menu {
