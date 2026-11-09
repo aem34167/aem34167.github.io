@@ -518,6 +518,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        background-color: #223843;
       }
       .feature.two .feature-image {
         align-self: center;
@@ -528,7 +529,7 @@
       }
       .feature.two .feature-description {
         box-sizing: border-box;
-        padding-inline: clamp(1.5rem, 5vw, 3rem);
+        padding-inline: clamp(1rem, 3vw, 2rem);
       }
       .feature.two dl{
         background-color: #D8B4A0;
