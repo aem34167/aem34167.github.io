@@ -468,7 +468,6 @@
       }
       .feature {
         display: flex;
-        gap: 1em;
         max-width: 1440px;
         margin: 0 auto;
         background-color: #223843;
@@ -531,6 +530,7 @@
       .feature.two .feature-description {
         box-sizing: border-box;
         padding-inline: clamp(1rem, 3vw, 2rem);
+        padding: 0 auto 0 auto;
       }
       .feature.two dl{
         background-color: #D8B4A0;
