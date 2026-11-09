@@ -206,7 +206,7 @@
         background-position: center;
         background-size: cover;
         justify-content: center;
-        align-items: left;
+        align-items: center;
         display: flex;
       }
      
@@ -225,7 +225,7 @@
         justify-content: flex-end; /* text to bottom */
         align-items: flex-start;   /* text to left */
         text-align: left;
-        min-height: 250px; 
+  min-height: 250px; 
         }
       .intro {
         padding: 40px;
