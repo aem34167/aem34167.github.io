@@ -549,13 +549,6 @@
         background-color: #D8B4A0;
       }
     
-
-  .index-story {
-     display: inline-block;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 10px;
-}
       @media (max-width: 767px) {
         .feature,
         .feature.reverse {
