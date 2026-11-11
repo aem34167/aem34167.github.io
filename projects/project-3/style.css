@@ -17,6 +17,23 @@
   color: #223843;
   font-style: italic;
 }
+#hero #hero-content a {
+        display: inline-block;
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: clamp(0.875rem, 2vw, 1.25rem);
+        border: clamp(2px, 0.25vw, 3px) solid #D77A61;
+        border-radius: 100px;
+        padding: clamp(0.4rem, 1vw, 0.65rem) clamp(0.65rem, 1.5vw, 0.95rem);
+      }
+
+@media (max-width: 767px) {
+  #hero #hero-content .menu-arrow {
+    display: none;
+  }
+}
+
       body {
         margin: 0;
         padding: 0;
@@ -111,7 +128,7 @@
         color: #223843;
         font-family: "Josefin Sans", sans-serif;
         font-size: 36px;
-        padding: 15px;
+        padding: 10px;
         }
     p{
         font-family: "Josefin Slab", serif;
@@ -147,7 +164,6 @@
   padding: 1px 0;
 }
 .intro-story h2 {
-  margin: 0;
   padding: 20px 0;
   color: #D8B4A0;
   align-items: center;
@@ -155,7 +171,6 @@
   justify-content: center;
 }
 .intro-contact h2 {
-  margin: 0;
   padding: 20px 0;
   color: #D8B4A0;
   align-items: center;
@@ -163,7 +178,6 @@
   justify-content: center;
 }
 .intro-menu h2 {
-  margin: 0;
   padding: 20px 0;
   color: #D8B4A0;
   align-items: center;
@@ -227,7 +241,7 @@
 .contact .grid > div ul {
   text-align: center;
   align-self: center;
-  line-height: 3em;
+  line-height: 2em;
   font-size: 32px;
 }
 .contact .grid > .vertical-line {
@@ -273,11 +287,14 @@
 }
 
     .story{
-        background-color: #D77A61;
         color:#EFF1F3;
-        padding: 15px 20px;
         font-family: "Josefin Sans", sans-serif;
-        border-radius: 50px;
+        display: inline-block;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+        border: 2px solid #D77A61;
+        border-radius: 100px;
     }
   
 .feature.two {
@@ -285,7 +302,7 @@
 }
 .feature.two h2 {
   color: #223843;
-  font-size: 48px;
+  font-size: 30px;
 }
 .rounded-underline {
   position: relative;
@@ -394,6 +411,7 @@
         gap: 1rem;
         display: flex;
       }
+     
       #hero-menu {
         min-height: clamp(320px, 41.67vw, 600px);
         height: auto;
@@ -505,9 +523,7 @@
       .feature-image {
         position: relative;
         flex: 1.2 1 0;
-        aspect-ratio: 1 / 1;
-        height: auto;
-        align-self: flex-start;
+        align-self: stretch;
         overflow: hidden;
       }
       .feature-image img {
@@ -519,9 +535,6 @@
         object-fit: cover;
         object-position: center;
         background-color: #223843;
-      }
-      .feature.two .feature-image {
-        align-self: center;
       }
       .feature-description {
         flex: 1 1 0;
@@ -535,13 +548,14 @@
       .feature.two dl{
         background-color: #D8B4A0;
       }
-      .story {
+    
+
+  .index-story {
      display: inline-block;
     max-width: 100%;
     box-sizing: border-box;
     padding-bottom: 10px;
 }
-
       @media (max-width: 767px) {
         .feature,
         .feature.reverse {
@@ -563,6 +577,7 @@
         max-width: 600px;
         margin: 0 auto;
         font-family: "Josefin Slab", serif;
+        line-height: .25;
       }
 
       .menu-item {
