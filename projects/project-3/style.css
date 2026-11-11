@@ -297,16 +297,8 @@
         border-radius: 100px;
         padding: 10px 15px;
     }
-  .story a:hover{
-        color:#EFF1F3;
-        font-family: "Josefin Sans", sans-serif;
-        display: inline-block;
-        max-width: 100%;
-        box-sizing: border-box;
-        padding-bottom: 10px;
-        border: 2px solid #D77A61;
-        border-radius: 100px;
-        padding: 10px 15px;
+  .story:hover {
+        background-color: #D77A61;
     }
 .feature.two {
   background-color: #D8B4A0;
