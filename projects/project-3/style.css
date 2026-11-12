@@ -17,6 +17,13 @@
   color: #223843;
   font-style: italic;
 }
+hr {
+  display: none;
+}
+.story.invert {
+  color: #223843;
+  border-color: #D77A61;
+}
 #hero #hero-content a {
         display: inline-block;
         margin-top: 10px;
@@ -205,7 +212,6 @@
   align-items: center;
   justify-content: start;
   min-width: 0;
-  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -266,6 +272,16 @@
   .contact .vertical-line {
     display: none;
   }
+
+  hr {
+    border: none;
+    border-top: 3px solid #D77A61;
+    margin: 2rem 0;
+    border-radius: 100px;
+    width: 50%; 
+    margin: 20px auto;
+    display: block;
+  }
 }
 
 .grid ul {
@@ -296,9 +312,11 @@
         border: 2px solid #D77A61;
         border-radius: 100px;
         padding: 10px 15px;
+      
     }
   .story:hover {
         background-color: #D77A61;
+        color: #EFF1F3;
     }
 .feature.two {
   background-color: #D8B4A0;
@@ -377,12 +395,12 @@
       .hero-line-one{
         display: block;
         font-weight: 300; /* light */
-        font-size: clamp(1.75rem, 6vw, 3rem);
+        font-size: clamp(1.25rem, 6vw, 3rem);
       }
       .hero-line-two{
         display: block; 
         font-weight: 700; /* bold */
-        font-size: clamp(1.75rem, 6vw, 3rem);
+        font-size: clamp(1.25rem, 6vw, 3rem);
       }
       #hero {
         min-height: clamp(320px, 41.67vw, 600px);
@@ -478,6 +496,13 @@
         text-align: left;
         min-height: 250px;
         }
+      #hero-content h1 {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-wrap: normal;
+        word-break: normal;
+      }
       .intro {
         padding: 40px;
         text-align: center;
@@ -542,6 +567,9 @@
       .feature-description {
         flex: 1 1 0;
         min-width: 0;
+        box-sizing: border-box;
+        padding-inline: clamp(1rem, 4vw, 3rem);
+        padding-bottom: clamp(1rem, 3vw, 2rem);
       }
       .feature.two .feature-description {
         box-sizing: border-box;
@@ -553,6 +581,9 @@
       }
     
       @media (max-width: 767px) {
+        #hero-content {
+          width: min(90%, 32rem);
+        }
         .feature,
         .feature.reverse {
           flex-direction: column;
